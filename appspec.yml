@@ -1,0 +1,10 @@
+version: 0.0
+os: linux
+files:
+  - source: /home.html/loginform.html/contact.html/about.html/
+    destination: /var/www/html/WordPress
+hooks:
+  BeforeInstall:
+    - location: dep.sh
+      timeout: 300
+      runas: root
